@@ -10,3 +10,9 @@
 |Lecturer |Have flexible content and application so I can implement a wide range of information.| The platform can support diverse teaching methods and materials. |
 |Student |See the most urgent items so I do not miss important information.| Critical updates are easy to prioritise. |
 |Lecturer |See an overview of my students so I can make class-wide decisions.| I can identify trends and respond to cohort needs. |
+|Lecturer | I want to keep track of students progress with their math modules | So that i can make sure they keep up to date with their math tasks |
+|Student| I want an easy way to learn my math modules | so i can get good grades |
+|Student | I want to access math modules from home | So i can spend extra time outside of class on my math tasks |
+|Lecturer| I want to teach maths in an easier way | Because it will help with time management |
+|Lecturer| I want to supply something that holds all necessary math subjects | so students can read through them |
+|Student | I want to keep track of my progress | So i am not repeating modules i've already learnt |
