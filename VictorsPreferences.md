@@ -16,3 +16,4 @@
 |Lecturer| I want to teach maths in an easier way | Because it will help with time management |
 |Lecturer| I want to supply something that holds all necessary math subjects | so students can read through them |
 |Student | I want to keep track of my progress | So i am not repeating modules i've already learnt |
+|New home gardener | Know how to efficiently look after my plants| I don't want them to die|
