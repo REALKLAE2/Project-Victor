@@ -10,3 +10,5 @@ Comprehensive Testing Suite: Create, administer, and automatically grade math as
 Centralized Document Repository: Securely store, categorize, and share lecture notes, homework assignments, syllabi, and reference materials in one accessible hub.
 
 User Management: Role-based access control for administrators, teachers, and students to ensure a secure and structured learning experience.
+## Table format:
+Add '|' before each part (e.g. Student or descriptor), to add it to the table.
