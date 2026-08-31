@@ -1,6 +1,7 @@
-Project-Victor
-Project-Victor is an all-in-one web platform designed to streamline online mathematics education, testing, and resource management. Built to bridge the gap between digital teaching and organized learning, it provides a seamless environment for educators to instruct, evaluate, and share materials with students.
+# Project-Victor
 
+Project-Victor is an all-in-one web platform designed to streamline online mathematics education, testing, and resource management. Built to bridge the gap between digital teaching and organized learning, it provides a seamless environment for educators to instruct, evaluate, and share materials with students.
+---
 Key Features
 Interactive Online Classes: Engage students in real-time mathematics instruction with collaborative digital tools tailored for equations and problem-solving.
 
