@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>maths platform</title>
+</head>
+<body>
+<!-- i did get an llm to help bug fix some things on this end, we have done api calls in class but not made them, this is for poc for 'from home' -->
+<div id="subjects">
+  <button onclick="newQuestion('+')">Addition</button>
+  <button onclick="newQuestion('-')">Subtraction</button>
+  <button onclick="newQuestion('*')">Multiplication</button>
+  <button onclick="newQuestion('^')">Powers</button>
+</div>
+
+<div id="questionArea">
+  <p id="questionText">Pick a subject above</p>
+</div>
+ <!-- red -->
+<div id="failArea" style="color:red;"></div>
+
+<div id="answerArea">
+  <input type="text" id="answerInput">
+  <button onclick="submitAnswer()">Submit</button>
+</div>
+
+<script>
+
+
+let currentQuestion = null;
+
+function newQuestion(op) {
+  //FAKE API
+  fetch('http://localhost:3000/api/question?op=' + encodeURIComponent(op))
+    .then(res => res.json())
+    .then(data => {
+      currentQuestion = data;
+      document.getElementById("questionText").innerText = currentQuestion.questionText + " = ?";
+      document.getElementById("failArea").innerText = "";
+      document.getElementById("answerInput").value = "";
+    });
+}
+
+function submitAnswer() {
+  if (!currentQuestion) return;
+
+  const userAnswer = parseFloat(document.getElementById("answerInput").value);
+
+  if (userAnswer === currentQuestion.answer) {
+    document.getElementById("failArea").innerText = "";
+    document.getElementById("questionText").innerText = "Correct! " + currentQuestion.questionText + " = " + currentQuestion.answer;
+  } else {
+    document.getElementById("failArea").innerHTML =
+      "Wrong. The answer was " + currentQuestion.answer + ".<br>" + currentQuestion.steps;
+  }
+}
+
+</script>
+
+</body>
+</html>
